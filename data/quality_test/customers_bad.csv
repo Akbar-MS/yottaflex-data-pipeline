@@ -1,0 +1,7 @@
+customer_id,customer_name,email,city,created_at
+C001,Alice,alice@example.com,Hyderabad,2026-01-01
+C002,Bob,bob@example.com,Chennai,2026-01-02
+C002,Duplicate Bob,bob2@example.com,Chennai,2026-01-03
+,Missing ID,missing@example.com,Bengaluru,2026-01-04
+C003,Invalid Email,not-an-email,Delhi,2026-01-05
+C004,Invalid Date,date@example.com,Mumbai,not-a-date

@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+
+# Test cache
+.pytest_cache/
+
+# IDE
+.vscode/
+
+# Temporary files
+*.tmp.parquet
+data/output/
+data/rejects/
+reports/run_*.json
+reports/reconciliation.json
