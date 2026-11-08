@@ -1,7 +1,7 @@
 import pandas as pd
 from pathlib import Path
 
-from malformed_handler import quarantine_malformed_csv
+from src.malformed_handler import quarantine_malformed_csv
 
 
 class SchemaMismatchError(Exception):

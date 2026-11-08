@@ -1,20 +1,20 @@
 from pathlib import Path
 
-from ingestion import ingest_customers, ingest_orders
-from validation import validate_customers, validate_orders
-from transformation import (
+from src.ingestion import ingest_customers, ingest_orders
+from src.validation import validate_customers, validate_orders
+from src.transformation import (
     transform_customers,
     transform_orders,
     create_customer_order_summary
 )
-from publishing import publish_curated_datasets
-from metrics import start_run, finish_run, save_run_report
-from reconciliation import (
+from src.publishing import publish_curated_datasets
+from src.metrics import start_run, finish_run, save_run_report
+from src.reconciliation import (
     build_reconciliation,
     save_reconciliation
 )
-from rejects import create_reject_records, combine_rejects
-from malformed_handler import quarantine_malformed_csv
+from src.rejects import create_reject_records, combine_rejects
+from src.malformed_handler import quarantine_malformed_csv
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 INPUT_DIR = BASE_DIR / "data" / "input"
